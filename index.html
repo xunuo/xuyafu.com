@@ -9,7 +9,7 @@
      <!--
     <link rel="shortcut icon" href="mod-email/favicon.ico">
      -->
-     <title>XU</title>
+     <title>许亚夫的御用邮箱</title>
 
      <!-- Bootstrap core CSS -->
      <link href="/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
       <img id="mail-icon" src="mod-email/mail-icon.png" />
       -->
       <form class="form-signin" role="form" action="https://exmail.qq.com/cgi-bin/login">
-        <h2 class="form-signin-heading">我的邮箱:</h2>
+        <h2 class="form-signin-heading">「许亚夫的御用邮箱」</h2>
 
      <input type="hidden" name="firstlogin" value="false">
      <input type="hidden" name="errtemplate" value="dm_loginpage">
@@ -55,8 +55,7 @@
 
     <script src="/lab/jquery/jquery.js"></script>
     <script type="text/javascript">
-        var baseDomain = window.location.href.replace(/.+[\.\/]([A-z]+\.[A-z]+)\/[^\/].+/,"$1");
-        document.title = document.title + ' - ' + baseDomain;
+        var baseDomain = window.location.host;
         $('#fack-uin').val('i@' + baseDomain);
         $('#domain').val(baseDomain);
     </script>
